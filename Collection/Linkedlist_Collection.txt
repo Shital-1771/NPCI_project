@@ -1,0 +1,113 @@
+package com.practice.collection;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+
+public class Linkedlist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		LinkedList<String> list=new LinkedList<String>();
+		list.add("teena");
+		list.add("tanuja");
+		list.add("teena");
+		list.add("ashvini");
+		list.add("abhay");
+		list.add("Null");
+		list.add(2,"swaati");//insert at 2nd position
+		System.out.println(list);
+		
+		
+		//remove();//it remove line by line element
+		//list.remove();
+		//list.remove(5);//remove 5th no element
+		//list.remove("Null");//remove null(case sensitive)
+		//list.remove(12);//out of bound exception
+		System.out.println(list);
+		
+		LinkedList<Integer> list1=new LinkedList<Integer>();
+		list1.add(2);
+		list1.add(0);
+		list1.add(2);
+		list1.add(9);
+		list1.add(3);
+		list1.add(6);
+		list1.add(4);
+		System.out.println(list1.size());  //calculate size
+	
+		System.out.println("-------------------");
+		
+		//list1.remove();
+		//list1.remove();
+		//list1.remove(9);    //index out of bound
+		//list1.remove("9");  //nothing happend
+		
+		System.out.println(list1);
+		
+		/*Iterator its=list.iterator();
+		while(its.hasNext())
+		{
+			System.out.println(its.next());
+		}*/
+
+		
+		System.out.println("-------------------");
+
+		Iterator<Integer> its1=list1.iterator();
+		while(its1.hasNext())
+		{
+			System.out.println(its1.next());
+		}
+		
+		System.out.println("-------------------");
+
+		
+		LinkedList<Float> list3=new LinkedList<>(); //float linkedlist
+		list3.add(11.6f);
+		list3.add((float) 12.4);
+		list3.removeAll(list3);
+		System.out.println(list3);
+		
+		
+		LinkedList<Double> list4=new LinkedList<>(); //double linkedlist
+		list4.add(12.56);
+		list4.add(12.4);
+		list4.clear();
+		System.out.println(list4);
+
+		
+		LinkedList<Character> list5=new LinkedList<>();
+		//list5.add('ABc');  //not allowed
+		list5.add('B');
+		list5.add('C');
+		list5.add('H');
+		list5.add('P');
+		list5.add('I');
+		
+		list5.remove();
+		list5.remove(3);
+		System.out.println(list5);
+		
+		System.out.println(list5.contains('C'));
+		
+		list5.contains('p');
+		System.out.println(list5);  //not checked
+		
+		
+		LinkedList<String> list6=new LinkedList<>();
+		list6.add("i am java developer");
+		//list6.toArray();
+		/*Iterator<String> its6=list6.iterator();
+		while(its6.hasNext())
+		{
+			System.out.println(its6.next());
+			
+
+		}*/
+		
+				
+
+	}
+
+}

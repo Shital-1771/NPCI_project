@@ -1,0 +1,44 @@
+package com.practice.collection;
+
+import java.util.Iterator;
+import java.util.TreeSet;
+
+public class Treeset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		TreeSet<String> tr=new TreeSet<>();
+		tr.add("teena");
+		tr.add("abhay");
+		tr.add("tau");
+		tr.add("mukesh");
+		tr.add("om");
+		System.out.println(tr);
+		
+		System.out.println(tr.descendingSet());
+		
+		Iterator<String> i= tr.descendingIterator();
+		while(i.hasNext())
+		{
+			System.out.println(i.next());
+		}
+		
+		System.out.println("------------------");
+
+		
+		System.out.println(tr.pollFirst());
+		System.out.println(tr.pollFirst());
+		System.out.println(tr.pollLast());
+
+		 System.out.println("Head Set: "+tr.headSet("abhay"));  
+         
+         System.out.println("SubSet: "+tr.subSet("tau", "teena"));  
+           
+         System.out.println("TailSet: "+tr.tailSet("om"));  
+
+		
+		
+	}
+
+}

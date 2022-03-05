@@ -1,0 +1,5 @@
+list2 = (8, 2, 3, 0, 7)
+count = 0
+for i in range(0, len(list2)):
+    count = count + list2[i]
+print("Output : ", count)

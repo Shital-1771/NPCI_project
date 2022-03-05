@@ -1,0 +1,4 @@
+list1 = ['teena', 'java', 'Exercises']
+longest_string = max(list1, key=len)
+print("Longest word: ", longest_string)
+print("Length of the longest word: ", len(longest_string))

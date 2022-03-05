@@ -1,0 +1,65 @@
+package com.practice.collection;
+
+
+import java.util.Vector;
+
+public class vector {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Vector<String> v=new Vector<String>();
+		v.add("add");
+		v.add("Sub");
+		v.add("Mul");
+		v.add("add");
+		v.addElement("div");
+		v.add("add");
+		System.out.println("elements are="+v);
+		
+		System.out.println("size = "+v.size());
+		System.out.println("capacity ="+v.capacity());
+		
+		System.out.println(v.indexOf("Mul"));
+		
+		v.remove((String)"add"); //first repeat delete only
+		System.out.println("elements are="+v);
+		
+		v.set( 3,"my");
+		System.out.println(v);
+		
+		
+		System.out.println(v.get(4));
+		System.out.println("-------");
+		
+		if(v.contains("dic"))
+		{
+			System.out.println("yes contain");
+		}
+		else
+		{
+			System.out.println("no contain");
+		}
+		
+		System.out.println(v.firstElement());
+		System.out.println(v.lastElement());
+		v.remove((String)"abc"); //first repeat delete only
+
+		
+		Vector<Integer> list1=new Vector<Integer>();
+		list1.add(2);
+		list1.add(1);
+		list1.add(0);
+		list1.add(2);
+		list1.add(2);
+		System.out.println(list1);
+		
+		list1.remove((Integer)2); //first repeat delete only
+		System.out.println(list1);
+
+
+		//v.remove();
+		System.out.println();
+	}
+
+}

@@ -1,0 +1,14 @@
+package Basic;
+
+public class MultilvelInheMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Third t=new Third();
+		t.display3();
+		t.display2();
+		t.display1();
+
+	}
+
+}

@@ -1,0 +1,30 @@
+package com.practice.collection;
+
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class Hashset2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Integer> hs=new HashSet<Integer>();
+		hs.add(12);
+		hs.add(10);
+		hs.add(34);
+		hs.add(1);
+		hs.add(0);
+		hs.add(12);
+		
+		System.out.println(hs);
+		
+		hs.remove(3);
+		
+		Iterator<Integer> it=hs.iterator();
+		while(it.hasNext())
+		{
+			System.out.println(it.next());
+		}
+
+	}
+
+}

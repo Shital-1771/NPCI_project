@@ -1,0 +1,60 @@
+package com.practice.collection;
+//import java.Collection;
+import java.util.ArrayList;
+import java.util.Iterator;
+//import java.util.Iterator;
+
+public class Arraylist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			ArrayList<String> list=new ArrayList<String>();
+			list.add("abc");
+			list.add("drf");
+			list.add("abc");
+			list.add("Null");
+			list.add("abc");
+			//list.addElement("xyz");  //not allowed
+			System.out.println(list);
+			System.out.println(list.indexOf("Null"));
+			
+			list.remove((String)"abc"); //first repeat delete only
+			System.out.println("elements are="+list);
+
+			list.set( 3,"my");
+			System.out.println(list);
+
+
+			
+			ArrayList<Integer> list1=new ArrayList<Integer>();
+			list1.add(2);
+			list1.add(1);
+			list1.add(0);
+			list1.add(2);
+			System.out.println(list1);
+			System.out.println("------------------------------");
+			
+			list1.remove(2);//on the basis of index
+			System.out.println(list1);
+			
+			list.remove("abc");//search from startinf and which one first it remove
+			System.out.println(list);
+			
+			Iterator<String> its=list.iterator();
+			while(its.hasNext())
+			{
+				System.out.println(its.next());
+			}
+			
+			
+			Iterator its1=list.iterator();
+			while(its1.hasNext())
+			{
+				System.out.println(its1.next());
+			}
+					
+	}
+
+	
+}

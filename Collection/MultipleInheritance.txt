@@ -1,0 +1,25 @@
+package Basic;
+
+public class MultilevelInhe {
+
+	public void display1()
+	{
+		System.out.println("1St method called");
+	}
+}
+
+class Second extends MultilevelInhe {
+
+	public void display2()
+	{
+		System.out.println("2nd method called");
+	}
+}
+
+class Third extends Second   {
+
+	public void display3()
+	{
+		System.out.println("3rd method called");
+	}
+}

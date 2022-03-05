@@ -1,0 +1,49 @@
+package com.practice.collection;
+
+import java.util.HashSet;
+import java.util.Iterator;
+//import java.util.Set;
+//import java.utill.HashSet;
+
+public class Hashset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+			HashSet<String> hs=new HashSet<>();
+			hs.add("abhay");
+			hs.add("Sonu");
+			System.out.println(hs);
+			
+			HashSet<Integer> hs1=new HashSet<>();
+			hs1.add(12);
+			hs1.add(34);
+			hs1.add(34);
+			hs1.add(1);
+			hs1.add(1);
+			hs1.add(0);
+			System.out.println(hs1);
+			hs1.remove(1);
+			System.out.println(hs1);
+			
+			Iterator<Integer> i=hs1.iterator();
+			while(i.hasNext())
+			{
+				System.out.println(i.next());
+			}
+			
+			
+			HashSet<String> hs2=new HashSet<String>();
+			hs2.add("tau");
+			hs2.add("om");
+			hs2.add("Null");
+			hs.addAll(hs2);
+			System.out.println(hs);
+			
+			hs.clear();
+			System.out.println(hs);
+			
+		
+	}
+
+}

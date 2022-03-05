@@ -1,0 +1,23 @@
+package com.practice.collection;
+
+import java.util.LinkedHashSet;
+
+public class Linkedhashset {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		LinkedHashSet<String> st=new LinkedHashSet<String>();
+		st.add("ravi");
+		st.add("abhay");
+		st.add("ravi");
+		st.add("vijay");
+		System.out.println(st);
+		
+		st.remove("ravi");
+		System.out.println(st);
+
+		
+	}
+
+}
