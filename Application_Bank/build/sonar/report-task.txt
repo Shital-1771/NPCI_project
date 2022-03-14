@@ -1,0 +1,6 @@
+projectKey=Bank-project
+serverUrl=http://localhost:9000
+serverVersion=9.3.0.51899
+dashboardUrl=http://localhost:9000/dashboard?id=Bank-project
+ceTaskId=AX90L4oiXQ-kfLPQRMfj
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AX90L4oiXQ-kfLPQRMfj
